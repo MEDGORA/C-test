@@ -6,11 +6,11 @@ if (int.TryParse(str, out int amountString))
 }
 else
 {
-    Console.WriteLine("Введите целое число больше нуля");
+    Console.WriteLine("Введите целое положительное число");
 }
 if (amountString < 0)
 {
-    Console.WriteLine("Введите целое число больше нуля");
+    Console.WriteLine("Количество строк не может быть отрицательным");
 }
 
 string [] inputArray = new string [amountString];

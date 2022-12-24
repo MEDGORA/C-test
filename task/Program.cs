@@ -1,5 +1,4 @@
 ﻿Console.Write("Введите количество строк в массиве: ");
-//int amountString = Convert.ToInt32(Console.ReadLine());
 string str = Console.ReadLine();
 if (int.TryParse(str, out int amountString))
 {
@@ -26,16 +25,14 @@ for (int i = 0; i < amountString; i++)
     }
 }
 string [] finalArray = new string [count];
-count = 0;
+int j = 0;
 for (int i = 0; i < amountString; i++)
 {
     if (inputArray[i].Length < 4)
     {
-        finalArray[count] = inputArray[i];
-        count++;
+        finalArray[j] = inputArray[i];
+        j++;
     }
 }
-//string arr = string.Join(", ", inputArray);
-//Console.Write(arr);
 
 Console.Write(finalArray[new Random().Next(0,count)]);

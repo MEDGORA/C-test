@@ -8,9 +8,9 @@ else
 {
     Console.WriteLine("Введите целое положительное число");
 }
-if (amountString < 0)
+if (amountString <= 0)
 {
-    Console.WriteLine("Количество строк не может быть отрицательным");
+    Console.WriteLine("Количество строк должно быть положительным");
 }
 
 string [] inputArray = new string [amountString];
